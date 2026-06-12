@@ -1,0 +1,33 @@
+{
+  "name": "ammo-site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "qa": "node scripts/qa-check.mjs",
+    "qa:routes": "node scripts/qa-check.mjs --skip-build --skip-audit",
+    "check:data-quality": "node scripts/check-data-quality.mjs",
+    "score:drafts": "node scripts/score-drafts.mjs",
+    "score:markdown": "node scripts/score-markdown-drafts.mjs",
+    "import:company": "node scripts/import-company-draft.mjs",
+    "import:university": "node scripts/import-university-draft.mjs",
+    "lint:drafts": "node scripts/lint-draft-markdown.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.0",
+    "tailwindcss": "^4.3.0",
+    "vue": "^3.5.34",
+    "vue-router": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.12.3",
+    "@vitejs/plugin-vue": "^6.0.6",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.12",
+    "vue-tsc": "^3.2.8"
+  }
+}

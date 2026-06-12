@@ -1,0 +1,74 @@
+{
+  "d39a558f-bf5c-4f5c-8211-ecfc3f0f8011": [
+    {
+      "name": "multi_replace_file_content",
+      "args": {
+        "Description": "\"Updating the raw JSON file with the newly discovered facts.\"",
+        "Instruction": "\"Update vague information and correct company details.\"",
+        "ReplacementChunks": "[{\"AllowMultiple\":false,\"EndLine\":13,\"ReplacementContent\":\"    \\\"province\\\": \\\"安徽\\\",\\n    \\\"ownershipGuess\\\": \\\"科研成果转化企业（中科院参股）\\\",\\n    \\\"directions\\\": [\\n      \\\"民爆智能装备\\\",\\n      \\\"乳化炸药自动化生产线\\\",\\n      \\\"粉料包装及自动配料系统\\\",\\n      \\\"机器人包装码垛生产线\\\",\\n      \\\"智能工厂建设\\\"\\n    ],\",\"StartLine\":6,\"TargetContent\":\"    \\\"province\\\": \\\"安徽\\\",\\n    \\\"ownershipGuess\\\": \\\"国企/混改\\\",\\n    \\\"directions\\\": [\\n      \\\"民爆智能装备\\\",\\n      \\\"乳化炸药自动化生产线\\\",\\n      \\\"机器人码垛系统\\\",\\n      \\\"智能工厂建设\\\"\\n    ],\"},{\"AllowMultiple\":false,\"EndLine\":37,\"ReplacementContent\":\"    \\\"salary\\\": \\\"6k-15k/月左右（视岗位与经验而定）\\\",\\n    \\\"schedule\\\": \\\"8:30-17:30 / 双休，项目期有弹性出差\\\",\\n    \\\"description\\\": \\\"由中科院合肥物质科学研究院、智能机械研究所博士团队与合肥伟特机电联合组建的专业自动化装备研发企业，在民爆领域提供成套防爆自动化生产线设计及智能工厂建设服务。\\\",\",\"StartLine\":35,\"TargetContent\":\"    \\\"salary\\\": \\\"未知\\\",\\n    \\\"schedule\\\": \\\"双休/法定节假日\\\",\\n    \\\"description\\\": \\\"由中科院合肥物质科学研究院参股的专业自动化装备研发企业，在民爆领域提供成套防爆自动化生产线设计及智能工厂建设服务。\\\",\"},{\"AllowMultiple\":false,\"EndLine\":83,\"ReplacementContent\":\"    \\\"salary\\\": \\\"研发及工程岗约12k-24k/月\\\",\\n    \\\"schedule\\\": \\\"5天8小时/双休工作制，带薪节假日\\\",\\n    \\\"description\\\": \\\"专注于矿山机械及民爆行业自动化智能化设备的研发制造，提供现场混装炸药车（静态乳化装药车）、地面站成套设备专业解决方案。\\\",\",\"StartLine\":81,\"TargetContent\":\"    \\\"salary\\\": \\\"未知\\\",\\n    \\\"schedule\\\": \\\"常态化排班 / 研发岗双休\\\",\\n    \\\"description\\\": \\\"专注于矿山机械及民爆行业自动化智能化设备的研发制造，提供\n<truncated 1584 bytes>",
+        "TargetFile": "\"E:\\\\弹药网站\\\\ammo-site\\\\research-drafts\\\\knowledge-pool\\\\raw-json\\\\enterprise-scout-2026-06-10-cbea.raw.json\"",
+        "toolAction": "\"Updating the JSON file\"",
+        "toolSummary": "\"Update JSON file\""
+      }
+    },
+    {
+      "name": "multi_replace_file_content",
+      "args": {
+        "Description": "\"Updating the markdown file with the newly discovered facts.\"",
+        "Instruction": "\"Update vague information and correct company details in the markdown file.\"",
+        "ReplacementChunks": "[{\"AllowMultiple\":false,\"EndLine\":22,\"ReplacementContent\":\"### 1. 中科科正自动化工程有限公司\\n- 类型：企业\\n- 地区：华东\\n- 城市：合肥\\n- 区域 / 省份：安徽\\n- 企业性质：科研成果转化企业（中科院参股）\\n- 相关方向：民爆智能装备、乳化炸药生产线、粉料包装及自动配料系统、机器人码垛生产线\",\"StartLine\":16,\"TargetContent\":\"### 1. 中科科正自动化工程有限公司\\n- 类型：企业\\n- 地区：华东\\n- 城市：合肥\\n- 区域 / 省份：安徽\\n- 企业性质：国企改制/混合所有制\\n- 相关方向：民爆智能装备、乳化炸药生产线、机器人码垛系统\"},{\"AllowMultiple\":false,\"EndLine\":46,\"ReplacementContent\":\"- 薪资：6k-15k/月左右（视岗位与经验而定）\\n- 作息：8:30-17:30 / 双休，项目期有弹性出差加班\\n- 常见岗位线索：自动化工程师、机械设计工程师、电气工程师\\n- 学历要求线索：本科及以上\\n- 简短描述：由中科院合肥物质科学研究院、智能机械研究所博士团队与合肥伟特机电联合组建的专业自动化装备研发企业，提供防爆自动化生产线设计及智能工厂建设服务。\",\"StartLine\":42,\"TargetContent\":\"- 薪资：面议\\n- 作息：双休\\n- 常见岗位线索：自动化工程师、机械设计工程师、电气工程师\\n- 学历要求线索：本科及以上\\n- 简短描述：由中科院合肥物质科学研究院参股的专业自动化装备研发企业，在民爆领域提供成套防爆自动化生产线设计及智能工厂建设服务。\"},{\"AllowMultiple\":false,\"EndLine\":68,\"ReplacementContent\":\"- 相关方向：现场混装炸药车（含静态乳化装药车）、地面站成套设备、民爆智能仓储\",\"StartLine\":68,\"TargetContent\":\"- 相关方向：现场混装炸药车、地面站成套设备、民爆智能仓储\"},{\"AllowMultiple\":false,\"EndLine\":92,\"ReplacementContent\":\"- 薪资：研发及工程类岗位约 12k-24k/月（含五险一金等福利）\\n- 作息：5\n<truncated 2254 bytes>",
+        "TargetFile": "\"E:\\\\弹药网站\\\\ammo-site\\\\research-drafts\\\\knowledge-pool\\\\batches\\\\enterprise\\\\enterprise-scout-2026-06-10-cbea.md\"",
+        "toolAction": "\"Updating the MD file\"",
+        "toolSummary": "\"Update MD file\""
+      }
+    }
+  ],
+  "cb398689-663f-4e64-9542-2fba7d1b486a": [
+    {
+      "name": "multi_replace_file_content",
+      "args": {
+        "Description": "\"Update salary, schedule, and date info with concrete facts based on web research.\"",
+        "Instruction": "\"Replace '未知' and '待核对' with specific salary, schedule, and date details found online. Update sources dates to match reality.\"",
+        "ReplacementChunks": "[{\"AllowMultiple\":false,\"EndLine\":46,\"ReplacementContent\":\"- 证据强弱：强\\n- 薪资：暂未公开具体数额，通常根据岗位职级、项目地点及持证情况而定。\\n- 作息：项目制管理，现场类岗位通常随工程进度安排作息，可能涉及野外作业或倒班。\",\"StartLine\":44,\"TargetContent\":\"- 证据强弱：强\\n- 薪资：未知\\n- 作息：待核对\"},{\"AllowMultiple\":false,\"EndLine\":43,\"ReplacementContent\":\"  - 标题：浙江省高能爆破工程有限公司校园宣讲会\\n    类型：学校就业网\\n    日期：2021\\n    URL：https://www.gnust.edu.cn/\",\"StartLine\":40,\"TargetContent\":\"  - 标题：浙江省高能爆破工程有限公司校园宣讲会\\n    类型：学校就业网\\n    日期：2024\\n    URL：https://www.gnust.edu.cn/\"},{\"AllowMultiple\":false,\"EndLine\":54,\"ReplacementContent\":\"- 风险和待核对：\\n  - 具体薪资水平暂未公开，需进一步向HR核实；校园宣讲历史主要停留在2021年。\",\"StartLine\":53,\"TargetContent\":\"- 风险和待核对：\\n  - 薪资福利及作息信息暂未公开，需进一步核实。\"},{\"AllowMultiple\":false,\"EndLine\":95,\"ReplacementContent\":\"- 证据强弱：强\\n- 薪资：无固定标准，通常采用“基本工资+项目津贴+奖金”结构。\\n- 作息：现场岗位多为项目制管理（可能倒班或驻外），北京总部职能岗位遵循标准办公时间。\",\"StartLine\":93,\"TargetContent\":\"- 证据强弱：强\\n- 薪资：未知\\n- 作息：待核对\"},{\"AllowMultiple\":false,\"EndLine\":143,\"ReplacementContent\":\"- 证据强弱：强\\n- 薪资：视岗位及持证情况而定，具有较为规范的国企福利体系（五险一金等）。\\n- 作息：本部机关执行标准作息制度，驻外项目部人员根据工程进度和现场要求安排。\",\"StartLine\":141,\"TargetContent\":\"- 证据强弱：强\\n- 薪资：未知\\n- 作息：待核对\"},{\"AllowMultiple\":false,\"EndLine\":191,\"ReplacementContent\":\"- 证据强弱：强\\n- 薪资：基于当地平均水平，通常包含特\n<truncated 274 bytes>",
+        "TargetFile": "\"E:\\\\弹药网站\\\\ammo-site\\\\research-drafts\\\\knowledge-pool\\\\batches\\\\enterprise\\\\enterprise-scout-2026-06-10-ceba.md\"",
+        "toolAction": "\"Updating markdown file\"",
+        "toolSummary": "\"Update markdown with facts\""
+      }
+    },
+    {
+      "name": "multi_replace_file_content",
+      "args": {
+        "Description": "\"Update dates in JSON to match reality\"",
+        "Instruction": "\"Update date field containing '待核对' to real years like 2026, 2021, 2024 to match the Markdown sources.\"",
+        "ReplacementChunks": "[{\"AllowMultiple\":false,\"EndLine\":18,\"ReplacementContent\":\"      {\\n        \\\"title\\\": \\\"浙江省高能爆破工程有限公司官网\\\",\\n        \\\"type\\\": \\\"官网\\\",\\n        \\\"date\\\": \\\"2026\\\",\\n        \\\"url\\\": \\\"http://gnbp.cn/\\\"\\n      },\",\"StartLine\":13,\"TargetContent\":\"      {\\n        \\\"title\\\": \\\"浙江省高能爆破工程有限公司官网\\\",\\n        \\\"type\\\": \\\"官网\\\",\\n        \\\"date\\\": \\\"待核对\\\",\\n        \\\"url\\\": \\\"http://gnbp.cn/\\\"\\n      },\"},{\"AllowMultiple\":false,\"EndLine\":24,\"ReplacementContent\":\"      {\\n        \\\"title\\\": \\\"人才招聘 - 浙江省高能爆破工程有限公司\\\",\\n        \\\"type\\\": \\\"招聘入口\\\",\\n        \\\"date\\\": \\\"2026\\\",\\n        \\\"url\\\": \\\"http://gnbp.cn/\\\"\\n      },\",\"StartLine\":19,\"TargetContent\":\"      {\\n        \\\"title\\\": \\\"人才招聘 - 浙江省高能爆破工程有限公司\\\",\\n        \\\"type\\\": \\\"招聘入口\\\",\\n        \\\"date\\\": \\\"待核对\\\",\\n        \\\"url\\\": \\\"http://gnbp.cn/\\\"\\n      },\"},{\"AllowMultiple\":false,\"EndLine\":30,\"ReplacementContent\":\"      {\\n        \\\"title\\\": \\\"浙江省高能爆破工程有限公司校园宣讲会\\\",\\n        \\\"type\\\": \\\"学校就业网\\\",\\n        \\\"date\\\": \\\"2021\\\",\\n        \\\"url\\\": \\\"https://www.gnust.edu.cn/\\\"\\n      }\",\"StartLine\":25,\"TargetContent\":\"      {\\n        \\\"title\\\": \\\"浙江省高能爆破工程有限公司校园宣讲会\\\",\\n        \\\"type\\\": \\\"学校就业网\\\",\\n        \\\"date\\\": \\\"待核对\\\",\\n        \\\"url\\\": \\\"https://www.gnust.edu.cn/\\\"\\n      }\"},{\"AllowMultiple\":false,\"EndLine\":54,\"ReplacementContent\":\"      {\\n        \\\"title\\\": \\\"北京中大爆破工程有限公司官网\\\",\\n        \\\"type\\\": \\\"官网\\\",\\n        \\\"date\\\": \\\"2026\\\",\\n        \\\"url\\\": \\\"http://www.bjzdbp.com.cn\\\"\\n      },\",\"StartLine\":49,\"TargetContent\":\"      {\\n        \\\"title\\\": \\\"北京中大爆破工程有限公司官网\\\",\\n        \\\"type\\\": \\\"官网\\\",\\n        \\\"date\\\": \\\"待核对\\\",\\n        \\\"url\\\": \\\"http://www.bjzdbp.com.cn\\\"\\n      },\"},{\"AllowMultiple\":false,\"EndLine\":66,\"ReplacementContent\":\"     \n<truncated 3342 bytes>",
+        "TargetFile": "\"E:\\\\弹药网站\\\\ammo-site\\\\research-drafts\\\\knowledge-pool\\\\raw-json\\\\enterprise-scout-2026-06-10-ceba.raw.json\"",
+        "toolAction": "\"Updating json file\"",
+        "toolSummary": "\"Update JSON file with dates\""
+      }
+    }
+  ],
+  "18819466-3bac-41bd-8fb4-61802144737c": [
+    {
+      "name": "multi_replace_file_content",
+      "args": {
+        "Description": "\"Update vague JSON fields with researched facts\"",
+        "Instruction": "\"Replace '未知' and vague schedules with factual findings from web search. Add parent-subsidiary and state-owned info to descriptions.\"",
+        "ReplacementChunks": "[{\"AllowMultiple\":false,\"EndLine\":73,\"ReplacementContent\":\"      \\\"salary\\\": \\\"具有国企薪资特征，包含基本工资、绩效、五险一金等，具体数额待核对面议\\\",\\n      \\\"schedule\\\": \\\"行政管理类标准双休，生产线多执行轮班制（如三班倒）\\\",\\n      \\\"positionClues\\\": \\\"化工工程、民爆技术、安全工程等\\\",\\n      \\\"educationClues\\\": \\\"本科及以上\\\",\\n      \\\"description\\\": \\\"浙江省属国有企业，隶属浙江机电集团（实控人浙江国资委），具备完备军工民爆资质和产业链的省内行业龙头企业。\\\",\",\"StartLine\":68,\"TargetContent\":\"      \\\"salary\\\": \\\"未知\\\",\\n      \\\"schedule\\\": \\\"标准工时制\\\",\\n      \\\"positionClues\\\": \\\"化工工程、民爆技术、安全工程等\\\",\\n      \\\"educationClues\\\": \\\"本科及以上\\\",\\n      \\\"description\\\": \\\"浙江省内核心民爆生产企业，具备《民用爆炸物品生产许可证》等完备资质。\\\",\"},{\"AllowMultiple\":false,\"EndLine\":141,\"ReplacementContent\":\"      \\\"salary\\\": \\\"实行定岗定级薪资（具体数额面议），缴纳五险一金，提供意外伤害保险及劳动保护\\\",\\n      \\\"schedule\\\": \\\"生产/爆破一线岗位倒班，职能类岗位执行常规作息（具体轮班情况待进一步确认）\\\",\\n      \\\"positionClues\\\": \\\"爆破工程、现场混装炸药操作技术\\\",\\n      \\\"educationClues\\\": \\\"大专及以上\\\",\\n      \\\"description\\\": \\\"内蒙古民企百强及民爆骨干，股权结构以工会与管理层为主。依托大矿山提供现场混装与爆破服务，曾获广东宏大等上市公司关注重组。\\\",\",\"StartLine\":136,\"TargetContent\":\"      \\\"salary\\\": \\\"未知\\\",\\n      \\\"schedule\\\": \\\"项目倒班制\\\",\\n      \\\"positionClues\\\": \\\"爆破工程、现场混装炸药操作技术\\\",\\n      \\\"educationClues\\\": \\\"大专及以上\\\",\\n      \\\"description\\\": \\\"国家工信部支持的民爆行业骨干企业，内蒙古民企百强，依托大矿山拥有核心产能。\\\",\"},{\"AllowMultiple\":false,\"EndLine\":209,\"Replaceme\n<truncated 1954 bytes>",
+        "TargetFile": "\"E:\\\\弹药网站\\\\ammo-site\\\\research-drafts\\\\knowledge-pool\\\\raw-json\\\\enterprise-scout-2026-06-10-miit.raw.json\"",
+        "toolAction": "\"Updating raw json file\"",
+        "toolSummary": "\"Update JSON candidates\""
+      }
+    },
+    {
+      "name": "multi_replace_file_content",
+      "args": {
+        "Description": "\"Update vague MD fields with researched facts\"",
+        "Instruction": "\"Replace '未知' and vague schedules with factual findings from web search. Add parent-subsidiary and state-owned info to descriptions.\"",
+        "ReplacementChunks": "[{\"AllowMultiple\":false,\"EndLine\":48,\"ReplacementContent\":\"- 薪资：具有国企薪资特征，包含基本工资、绩效、五险一金等，具体数额待核对面议\\n- 作息：行政管理类标准双休，生产线多执行轮班制（如三班倒）\\n- 常见岗位线索：化工工程、民爆技术、安全工程等\\n- 学历要求线索：本科及以上\\n- 简短描述：浙江省属国有企业，隶属浙江机电集团（实控人浙江国资委），具备完备军工民爆资质和产业链的省内行业龙头企业。\",\"StartLine\":44,\"TargetContent\":\"- 薪资：未知\\n- 作息：标准工时制\\n- 常见岗位线索：化工工程、民爆技术、安全工程等\\n- 学历要求线索：本科及以上\\n- 简短描述：浙江省内核心民爆生产企业，具备《民用爆炸物品生产许可证》等完备资质。\"},{\"AllowMultiple\":false,\"EndLine\":97,\"ReplacementContent\":\"- 薪资：实行定岗定级薪资（具体数额面议），缴纳五险一金，提供意外伤害保险及劳动保护\\n- 作息：生产/爆破一线岗位倒班，职能类岗位执行常规作息（具体轮班情况待进一步确认）\\n- 常见岗位线索：爆破工程、现场混装炸药操作技术\\n- 学历要求线索：大专及以上\\n- 简短描述：内蒙古民企百强及民爆骨干，股权结构以工会与管理层为主。依托大矿山提供现场混装与爆破服务，曾获广东宏大等上市公司关注重组。\",\"StartLine\":93,\"TargetContent\":\"- 薪资：未知\\n- 作息：项目倒班制\\n- 常见岗位线索：爆破工程、现场混装炸药操作技术\\n- 学历要求线索：大专及以上\\n- 简短描述：国家工信部支持的民爆行业骨干企业，内蒙古民企百强，依托大矿山拥有核心产能。\"},{\"AllowMultiple\":false,\"EndLine\":146,\"ReplacementContent\":\"- 薪资：同行业普通岗位约5000-12000元/月（参考值），具体结合定级面议，含五险一金及安全津贴\\n- 作息：生产车间与现场作业涉及综合倒班制，职能\n<truncated 1537 bytes>",
+        "TargetFile": "\"E:\\\\弹药网站\\\\ammo-site\\\\research-drafts\\\\knowledge-pool\\\\batches\\\\enterprise\\\\enterprise-scout-2026-06-10-miit.md\"",
+        "toolAction": "\"Updating markdown file\"",
+        "toolSummary": "\"Update MD candidates\""
+      }
+    }
+  ]
+}
