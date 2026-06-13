@@ -7,7 +7,7 @@ const siteTitle = '弹药导航'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', name: 'home', component: HomePage, meta: { title: '弹药导航 - 专业、院校、企业和考研方向' } },
+    { path: '/', name: 'home', component: HomePage, meta: { title: '弹药导航' } },
     { path: '/about-major', name: 'about-major', component: () => import('./views/AboutMajor.vue'), meta: { title: '专业介绍 - 弹药导航' } },
     { path: '/about-major/curriculum', name: 'about-major-curriculum', component: () => import('./views/AboutMajorCurriculum.vue'), meta: { title: '学什么 - 弹药专业介绍 - 弹药导航' } },
     { path: '/about-major/path', name: 'about-major-path', component: AboutMajorPath, meta: { title: '四年节奏 - 弹药专业介绍 - 弹药导航' } },
