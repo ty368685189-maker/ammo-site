@@ -36,7 +36,7 @@ function isActive(path: string) {
 
 <template>
   <header
-    class="site-nav fixed left-1/2 top-3 z-[60] w-[calc(100%-1rem)] max-w-6xl -translate-x-1/2 rounded-lg border px-3 py-2 backdrop-blur-xl sm:w-[calc(100%-2rem)]"
+    class="site-nav sticky top-3 z-[60] mx-auto w-[calc(100%-1rem)] max-w-6xl rounded-lg border px-3 py-2 backdrop-blur-xl sm:w-[calc(100%-2rem)] md:fixed md:left-1/2 md:mx-0 md:w-[calc(100%-2rem)] md:-translate-x-1/2"
     :style="{
       backgroundColor: 'var(--surface)',
       borderColor: 'var(--border)',
